@@ -7,8 +7,17 @@ import Slider from "../components/Slider";
 const Explore = () => {
   return (
     <div className="explore">
-      <header>
+      <header
+        style={{
+          display: "flex",
+          justifyContent: "space-between",
+          marginBottom: "2rem",
+        }}
+      >
         <p className="pageHeader">Explore</p>
+        <Link to="/profile">
+          <button className="newBtn">Create a listing</button>
+        </Link>
       </header>
 
       <main>
